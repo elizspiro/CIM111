@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Example</title>
+    <style>
+
+    header{
+      width: 980px;
+      height: 100px;
+      background-color: darkslategray;
+      margin: 0 auto;
+    }
+
+    main{
+      width: 980px;
+      /* height: 500px; */
+      height: auto;
+      background-color: darkolivegreen;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    footer{
+      width: 980px;
+      height: 100px;
+      background-color: darkslategray;
+      margin: 0 auto;
+    }
+
+    #grid1{
+      width: 900px;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 475px;
+      grid-template-columns: 280px 300px 300px;
+      grid-column-gap: 20px;
+    }
+
+    #grid1 img{
+      width: 300px;
+    }
+
+    #grid2{
+      width: 900px;
+      height: auto;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 475px;
+      grid-template-columns: 300px 300px 300px;
+      grid-column-gap: 20px;
+    }
+
+
+    #grid2 section img{
+      width: 250px;
+    }
+
+    #grid3{
+      width: 600px;
+      height: auto;
+      margin: 0 auto;
+      grid-template-rows: 1fr; /* fr is frame */
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #grid3 img{
+      width: 300px;
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+
+    <main>
+      <section id="grid1">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7c76f668060071.5b4f954481e4a.jpg" alt="dog image">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <section id="grid2">
+        <section>
+          <h1>Dogs!</h1>
+          <ul>
+            <li>Black Lab</li>
+            <li>Golden Retriever</li>
+            <li>Poodle</li>
+          </ul>
+        </section>
+        <section>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2719d268060071.5b647921add23.jpg" alt="dog image2">
+            <p>We love dogs</p>
+        </section>
+        <section>
+          <h1>About Dogs</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+@import "desktop.css";
+
+body{
+  width: auto;
+}
+
+#grid_about{
+  grid-template-columns: 1fr;
+}
+#grid_about img{
+  width: 100%;
+}
+
+#grid_gallery{
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 12px;
+  grid-column-gap: 12px;
+}
+#grid_gallery img{
+  width: 100%;
+}
