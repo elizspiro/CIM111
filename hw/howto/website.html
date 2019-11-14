@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to bake a cake</title>
+
+    <link rel="stylesheet" href="js/jquery.pagepiling.css">
+    <style media="screen">
+      /*css goes here in a style tag */
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 30px;
+      border: 3px solid deepskyblue;
+    }
+
+    .grid img{
+      width: 400px;
+    }
+
+    .grid div{
+      border: 2px solid lightcoral;
+      background-color: mistyrose;
+    }
+
+    header{
+      background-color: mistyrose;
+      padding: 20px;
+      width: 1500px;
+      font-size: 20px
+
+    }
+
+    header a, header h1{
+      text-align: center;
+    }
+
+
+    div{
+      background-color: aliceblue;
+      font-size: 20px;
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="pagepiling">
+	<div class="section">
+
+    <header>
+    <h1 id="birthday"></h1>
+    <p>Learn how to bake a classic birthday cake that takes under an hour! Today we will be show you the step by step process to create a delicious Funfetti vanilla sponge cake with rich chocolate frosting. Decorate it to fit any special occassion and be the hit of the party! Simple and tasty! </p>
+    </header>
+
+  </div>
+
+
+	<div class="section">
+
+    <h3 id="show1" class="revealstep"> click to show/hide INGREDIENTS step</h3>
+
+    <section class="grid" id="step1">
+      <img src="images/step1.jpg">
+      <p>The first step is gathering all the ingredients. Here is a lsit of what you will need:</p>
+      <div>
+      <ul>
+        <li>Funfetti vanilla cake mix</li>
+        <li>Three large eggs</li>
+        <li>1/2 cup vegetable oil</li>
+        <li>1 cup Water</li>
+        <li>Chocolate frosting</li>
+        <p>Set your oven to 350ºF. Coat bottom of pan with no stick cooking spray or shortening and a flour dusting.</p>
+      </div>
+      </ul>
+    </section>
+
+  </div>
+
+
+	<div class="section">
+
+    <h3 id="show2" class="revealstep"> click to show/hide MIXING step</h3>
+
+    <section class="grid" id="step2">
+      <img src="images/step2.jpg">
+      <div>
+      <p>After gathering everything you will need to bake the cake, combine the ingredients into a large bowl. Beat cake mix, water, oil, and eggs in bowl with mixer on medium speed for 2 minutes- or hand whisk if you don't have. </p>
+    </div>
+    </section>
+
+
+</div>
+
+	<div class="section">
+
+    <h3 id="show3" class="revealstep"> click to show/hide PREPARING PAN step</h3>
+
+    <section class="grid" id="step3">
+      <img src="images/step3.jpg">
+      <div>
+      <p>Here we begin step 3: Pour the batter into your pre-greased pan. Depending on what size you may need more than one pan.</p>
+    </div>
+    </section>
+
+  </div>
+
+  <div class="section">
+    <h3 id="show4" class="revealstep"> click to show/hide BAKING step</h3>
+
+    <section class="grid" id="step4">
+      <img src="images/step4.jpg">
+      <div>
+      <p>Bake at 350ºF. We used a square 8x8-inch pan and baked for 40-45 minutes, but all ovens vary. When toothpick inserted in the center comes out clean, cake is done. Cool 10 to 15 minutes before removing from the pan.</p>
+    </div>
+    </section>
+
+  </div>
+
+
+  <div class="section">
+    <h3 id="show5" class="revealstep"> click to show/hide FROSTING step</h3>
+    <section class="grid" id="step5">
+      <img src="images/step5.jpg">
+      <div>
+      <p>Cool cake completely before frosting. Use any flavor frosting you desire. We decided to use milk chocolate frosting and spread it over the entire cake.</p>
+    </div>
+    </section>
+
+  </div>
+
+  <div class="section">
+    <h3 id="showfinal" class="revealstep">click to show/hide the FINAL PRODUCT</h3>
+    <section class="grid" id="final">
+      <p>This is the final product! We decorated the cake with multicolored sprinkles and candles to celebrate a 21st birthday. </p>
+
+      <img src="images/stepfinal.jpg">
+    </section>
+
+  </div>
+
+
+</div>
+
+
+
+  <div id="container">
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        /* all of your jacascript/jQuery code goes below */
+        /* css function .css("css property","value") */
+
+        $('#pagepiling').pagepiling();
+
+
+        $(".grid").hide();
+
+        $("#birthday").html("Birthday Cake Recipe");
+
+        $("#birthday").css("color", "deepskyblue");
+
+        $("#show1").click(function(){
+          $("#step1").slideToggle(1000);
+        });
+
+        $("#show2").click(function(){
+          $("#step2").slideToggle(1000);
+        });
+
+        $("#show3").click(function(){
+          $("#step3").slideToggle(1000);
+        });
+
+        $("#show4").click(function(){
+          $("#step4").slideToggle(1000);
+        });
+
+        $("#show5").click(function(){
+          $("#step5").slideToggle(1000);
+        });
+
+        $("#showfinal").click(function(){
+          $("#final").slideToggle(1000);
+        });
+
+      });
+
+    </script>
+
+
+
+  </body>
+</html>
