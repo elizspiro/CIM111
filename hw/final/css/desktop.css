@@ -1,5 +1,7 @@
 body {
   margin: none;
+  font-size: 20px;
+  font-family: 'Handlee', cursive;
 }
 
 #container {
@@ -25,12 +27,12 @@ footer {
 #navbar {
   background-color: firebrick;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #navbar a {
   color: white;
-  font-family: 'Helvetica';
+  font-family: 'Handlee', cursive;
   padding: 15px;
   float: left;
   text-align: center;
