@@ -14,8 +14,9 @@ header {
 }
 
 footer {
-  background-color: orange;
+  background-color: steelblue;
   margin-top: 20px;
+  color: white;
 }
 
 #headerImage {
@@ -95,6 +96,7 @@ footer {
 
 #map {
   position: absolute;
+  width: 750px;
 }
 
 #buttonContainer {
