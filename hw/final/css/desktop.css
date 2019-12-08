@@ -1,7 +1,7 @@
 #container {
-  max-width: 1000px;
+
   margin: auto;
-  background-color: green;
+  background-color: lightcyan;
 }
 
 header {
@@ -19,7 +19,7 @@ footer {
 }
 
 #navbar {
-  background-color: blue;
+  background-color: firebrick;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -37,7 +37,7 @@ footer {
 }
 
 #navbar a:hover {
-  background-color: purple;
+  background-color: indianred;
 }
 
 .centerheading {
@@ -46,11 +46,14 @@ footer {
 
 .grid_container img{
   width: 600px;
+  margin: auto;
 }
 
 .grid_container{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
 }
 
 
