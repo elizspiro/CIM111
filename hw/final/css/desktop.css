@@ -44,7 +44,14 @@ footer {
   text-align: center;
 }
 
+.grid_container img{
+  width: 600px;
+}
 
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 
 
