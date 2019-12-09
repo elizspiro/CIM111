@@ -32,6 +32,21 @@ footer{
 
 #buttonContainer{
   width: 100%;
+  height: 100px;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#buttonContainer div{
+  position: initial;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+#button1{
+
 }
 
 .grid_container img{
