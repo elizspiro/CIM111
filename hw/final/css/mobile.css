@@ -10,6 +10,10 @@ footer{
   padding-right: 10px;
 }
 
+nav{
+  grid-template-columns: 1fr;
+}
+
 #homegrid{
   grid-template-columns: 1fr 1fr;
 }
@@ -24,10 +28,12 @@ footer{
 
 #mapContainer{
   width: 100%;
+  height: auto;
 }
 
 #map{
   width: 100%;
+  position: initial;
 }
 
 #buttonContainer{
