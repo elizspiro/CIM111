@@ -1,5 +1,19 @@
 @import "desktop.css";
 
+main{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+footer{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #homegrid{
   grid-template-columns: 1fr 1fr;
+}
+
+#homegrid img{
+  width: 100%;
 }
