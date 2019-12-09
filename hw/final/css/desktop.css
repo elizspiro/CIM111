@@ -59,6 +59,10 @@ footer {
   margin: auto;
 }
 
+#homegrid a{
+  text-align: center;
+}
+
 .centerheading {
   text-align: center;
 }
