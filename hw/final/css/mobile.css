@@ -18,6 +18,22 @@ footer{
   width: 100%;
 }
 
+#mapGrid{
+  grid-template-columns: 1fr;
+}
+
+#mapContainer{
+  width: 100%;
+}
+
+#map{
+  width: 100%;
+}
+
+#buttonContainer{
+  width: 100%;
+}
+
 .grid_container img{
   width: 100%;
 }
