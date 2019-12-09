@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Travel Guide to Boston</title>
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 600px)" href="css/desktop.css">
+    <link rel="stylesheet" media="only screen and (max-width: 600px)" href="css/mobile.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="initial-scale=1">
   </head>
   <body>
 
@@ -54,7 +58,16 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154222984-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154222984-1');
+</script>
+
   </body>
 </html>
-
-<!--to do image carousel here-->

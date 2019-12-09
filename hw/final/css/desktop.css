@@ -1,5 +1,5 @@
 body {
-  margin: none;
+  margin: 0;
   font-size: 20px;
   font-family: 'Handlee', cursive;
 }
@@ -20,7 +20,6 @@ footer {
 }
 
 #headerImage {
-  background-color: red;
   width: 100%;
   height: 110px;
 }
@@ -37,6 +36,7 @@ footer {
   padding: 15px;
   float: left;
   text-align: center;
+  text-decoration: none;
 }
 #navbar a span {
   display: inline-block;
@@ -79,18 +79,15 @@ footer {
   grid-column-end: span 2;
 }
 
-
-
-
-
 /*This is for the map*/
 #mapGrid {
   display: grid;
-  grid-template-columns: 500px 200px;
+  grid-template-columns: 750px auto;
+  grid-gap: 20px;
 }
 #mapContainer {
   position: relative;
-  width: 500px;
+  width: 750px;
   height: 500px;
 }
 
@@ -100,23 +97,46 @@ footer {
 }
 
 #buttonContainer {
-  width: 500px;
+  width: 750px;
   height: 500px;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 #buttonContainer div {
   position: absolute;
-  background-color: purple;
   color: white;
   width: 50px;
   height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
 }
-#buttonContainer div:hover {
-  background-color: black;
+
+
+#button1{
+  background-color: deepskyblue;
+}
+
+#button1:hover{
+  background-color: mediumblue;
+}
+
+#button2{
+  background-color: darkorange;
+}
+
+#button2:hover{
+  background-color: orangered;
+}
+
+#button3{
+  background-color: violet;
+}
+
+#button3:hover{
+  background-color: darkmagenta;
 }
 
 .mapDescription {
