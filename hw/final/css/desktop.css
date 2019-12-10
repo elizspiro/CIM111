@@ -4,19 +4,26 @@ body {
   font-family: 'Handlee', cursive;
 }
 
-#container {
-  margin: auto;
-  background-color: lightcyan;
-}
-
 header {
   width: 100%;
+}
+
+main{
+  padding-left: 10px;
+  padding-right: 10px
 }
 
 footer {
   background-color: steelblue;
   margin-top: 20px;
   color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#container {
+  margin: auto;
+  background-color: lightcyan;
 }
 
 #headerImage {
@@ -68,7 +75,7 @@ footer {
 }
 
 .grid_container img{
-  width: 600px;
+  width: 100%;
   margin: auto;
 }
 
